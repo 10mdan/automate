@@ -11,7 +11,7 @@ public class CartPage {
   public final String CART_LIST = "css=div.cart-list.cart-list-active";
   public final String ITEM_NAME = "css=div.cart-item-name.js-product-title.truncated";
   public final String BACK_BUTTON= "css=i.wmicon.wmicon-angle-left.copy-small";
-  public final String CART_TOTAL_ITEMS = "css=h3.cart-list-title span";
+  public final String CART_TOTAL_ITEMS = "css=h3.cart-list-title > span";
 
   public void goToViewCart() throws Exception {
     Helper elemHelper  = new Helper();
@@ -24,6 +24,7 @@ public class CartPage {
   public void removeItemFromCart(String itemLocator) throws Exception {
     Helper elemHelper  = new Helper();
     elemHelper.scrollIntoViewAndClick(REMOVE_ITEM_FROM_CART);
+    Thread.sleep(1000);
 
   }
 }

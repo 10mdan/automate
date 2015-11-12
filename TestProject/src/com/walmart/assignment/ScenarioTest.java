@@ -15,7 +15,7 @@ public class ScenarioTest extends BaseTest {
   CartPage _cartPage = new CartPage();
   CheckoutPage _checkoutPage = new CheckoutPage();
   HomePage _homePage = new HomePage();
-  SignInPage signin = new SignInPage();
+  SignInPage _signin = new SignInPage();
 
   @Test
   public void TestScenario() throws Exception {
@@ -30,32 +30,31 @@ public class ScenarioTest extends BaseTest {
       AddIphoneItem();
 
       String item = _elemHelper.getText(_cartPage.ITEM_NAME);
+      System.out.println(item);
       _elemHelper.clickAndWait(_cartPage.BACK_BUTTON);
 
       //signin
       _homePage.goToSignIn();
-
-      signin.login();
+      _signin.login();
 
       //view cart
       _cartPage.goToViewCart();
 
-    //  Assert.assertTrue(_elemHelper.isElementPresent(_cartPage.IPHONE_CART_ITEM));
-
       //Check for item is same as added missing
       checkoutToHome();
 
+      //remove the item from the car
       _cartPage.goToViewCart();
-
-      //remove the
       _cartPage.removeItemFromCart(_cartPage.REMOVE_ITEM_FROM_CART);
-
+      _elemHelper.scrollUp();
+      String countItem = _elemHelper.getText(_cartPage.CART_TOTAL_ITEMS);
+      System.out.println(countItem);
+      Assert.assertEquals(countItem, "0 items.");
+      _signin.logout();
 
     } catch (Exception e) {
       throw new Exception(e.getMessage());
-      // TODO Auto-generated catch block
     }
-    System.out.println("Testing");
 
   }
 

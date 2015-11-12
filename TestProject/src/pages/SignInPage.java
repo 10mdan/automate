@@ -8,6 +8,7 @@ public class SignInPage {
   public final String EMAIL_SIGN_IN = "id=login-username";
   public final String PASSWORD_SIGN_IN = "id=login-password";
   public final String SIGN_IN_BUTTON = "xpath=//button[@data-automation-id='login-sign-in']";
+  public final String SIGNOUT = "xpath=//a[@href='https://www.walmart.com/account/logout']";
 
   HomePage homePage = new HomePage();
 
@@ -23,6 +24,14 @@ public class SignInPage {
    elemHelper.waitForPage();
  }
 
+
+ public void logout() throws Exception {
+   Helper elemHelper  = new Helper();
+   elemHelper.waitForElement(homePage.MENU_BUTTON);
+   elemHelper.clickAndWait(homePage.MENU_BUTTON);
+   elemHelper.scrollIntoViewAndClick(SIGNOUT);
+
+ }
 
 
 }

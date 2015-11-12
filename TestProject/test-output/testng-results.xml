@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="305992" started-at="2015-11-12T23:00:21Z" finished-at="2015-11-12T23:05:27Z">
+  <suite name="Default suite" duration-ms="58127" started-at="2015-11-12T23:36:46Z" finished-at="2015-11-12T23:37:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="305992" started-at="2015-11-12T23:00:21Z" finished-at="2015-11-12T23:05:27Z">
+    <test name="Default test" duration-ms="58127" started-at="2015-11-12T23:36:46Z" finished-at="2015-11-12T23:37:44Z">
       <class name="com.walmart.assignment.ScenarioTest">
-        <test-method status="PASS" signature="mandatoryBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryBeforeTestMethod" is-config="true" duration-ms="2681" started-at="2015-11-12T15:00:21Z" finished-at="2015-11-12T15:00:23Z">
+        <test-method status="PASS" signature="mandatoryBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryBeforeTestMethod" is-config="true" duration-ms="2762" started-at="2015-11-12T15:36:46Z" finished-at="2015-11-12T15:36:49Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mandatoryBeforeTestMethod -->
-        <test-method status="PASS" signature="TestScenario()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="TestScenario" duration-ms="303296" started-at="2015-11-12T15:00:23Z" finished-at="2015-11-12T15:05:27Z">
+        <test-method status="PASS" signature="TestScenario()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="TestScenario" duration-ms="55351" started-at="2015-11-12T15:36:49Z" finished-at="2015-11-12T15:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestScenario -->
-        <test-method status="PASS" signature="mandatoryAfterTestMethod()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-11-12T15:05:27Z" finished-at="2015-11-12T15:05:27Z">
+        <test-method status="PASS" signature="mandatoryAfterTestMethod()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-11-12T15:37:44Z" finished-at="2015-11-12T15:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mandatoryAfterTestMethod -->

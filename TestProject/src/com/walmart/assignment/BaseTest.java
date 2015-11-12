@@ -24,7 +24,7 @@ public class BaseTest {
   @AfterMethod(alwaysRun = true)
   public final void mandatoryAfterTestMethod() throws Exception
   {
-     // SessionManager.killSession();
+     SessionManager.killSession();
   }
 
 

@@ -57,9 +57,16 @@ public class Helper extends RemoteWebElement {
 
   public void scrollIntoViewAndClick(String locator) throws Exception {
     JavascriptExecutor jse = (JavascriptExecutor)getDriver();
-    jse.executeScript("scroll(0, 250)");
+    jse.executeScript("window.scroll(0, 250)");
     waitForElement(locator);
     jsclick(locator);
+  }
+
+  public void scrollUp() throws Exception {
+    JavascriptExecutor jse = (JavascriptExecutor)getDriver();
+    jse.executeScript("window.scroll(0, 0)");
+    System.out.println("Scrolled up");
+
   }
 
   public WebElement findElement(String locator) {

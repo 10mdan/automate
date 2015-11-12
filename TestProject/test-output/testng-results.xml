@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="305992" started-at="2015-11-12T23:00:21Z" finished-at="2015-11-12T23:05:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="305992" started-at="2015-11-12T23:00:21Z" finished-at="2015-11-12T23:05:27Z">
+      <class name="com.walmart.assignment.ScenarioTest">
+        <test-method status="PASS" signature="mandatoryBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryBeforeTestMethod" is-config="true" duration-ms="2681" started-at="2015-11-12T15:00:21Z" finished-at="2015-11-12T15:00:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.walmart.assignment.ScenarioTest.TestScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatoryBeforeTestMethod -->
+        <test-method status="PASS" signature="TestScenario()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="TestScenario" duration-ms="303296" started-at="2015-11-12T15:00:23Z" finished-at="2015-11-12T15:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario -->
+        <test-method status="PASS" signature="mandatoryAfterTestMethod()[pri:0, instance:com.walmart.assignment.ScenarioTest@33a10788]" name="mandatoryAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-11-12T15:05:27Z" finished-at="2015-11-12T15:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatoryAfterTestMethod -->
+      </class> <!-- com.walmart.assignment.ScenarioTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

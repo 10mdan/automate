@@ -37,31 +37,31 @@ Test Data:
 - Shipping Address: 850 Cherry Ave, San Bruno, CA 94066
 
 ### Class structure
-- /src
+- /src  
 	com.wallmart.assignment
-	- BaseTest.java
+	- BaseTest.java  
 	BeforeTest and AfterTest methods
 
-	- Helper.java
+	- Helper.java  
 	Wrapper over WebDriver APIs
 
-	- ScenarioTest.java
+	- ScenarioTest.java  
 	Test Class
 
-	- SessionManager.java
+	- SessionManager.java  
 	APIs for managing sessions with WebDriver
 
-	pages
-	- CartPage.java
+	pages  
+	- CartPage.java  
 	Elements and utility functions for the page
 
-	- CheckoutPage.java
+	- CheckoutPage.java  
 	Elements and utility functions for the page
 
-	- HomePage.java
+	- HomePage.java  
 	Elements and utility functions for the page
 
-	- SignInPage.java
+	- SignInPage.java  
 	Elements and utility functions for the page
 
 - /resources
